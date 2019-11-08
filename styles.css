@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+}
+header {
+    background: url('images/dinosaur.jpg');
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+.about-page {
+    background: rgba(244, 217, 27, 0.9);
+}
+header h1 {
+    margin-top: 20%;
+    background: rgba(244, 217, 27, 0.9);
+    font-family: 'Abril Fatface', cursive;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: auto;
+}
+header h2 {
+    font-size: 110%;
+    font-weight: bolder;
+    background: rgba(255,255,255,0.5);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: auto;
+}
+header button {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: rgba(244, 217, 27, 0.9);
+    border-style: solid;
+    border-width: medium;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button a {
+    color: black;
+}
+nav a {
+    color: #333;
+    font-weight: bolder;
+}
+nav .title-bar {
+    background-color: transparent;
+}
+
+section h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 110%;
+}
+section h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+.about-me {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.about-site {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.small-dino {
+    max-width: 300px;
+    height: auto;
+}
+section .card{
+    background: rgba(244, 217,27, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#profile.card{
+    background: #FFFFFF;
+}
+.welcome-hero {
+    background: url('images/yellowrex.jpg');
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+.secure a {
+    color: #333;
+}
+.secure h1 {
+    background: rgba(255, 255, 255, 0.8);
+    font-family: 'Abril Fatface', cursive;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: auto;    
+}
+section h4 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+}
+section .dinofacts {
+    border-width: thin;
+    border-color: #333;
+    border-style: solid;
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2%;
+    padding: 2%;
+}

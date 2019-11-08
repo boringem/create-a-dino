@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+  <title>Home</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <!-- This loads Foundation CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
+  <!-- This loads jQuery JavaScript (this must be before the Foundation js below) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- This loads Foundation JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <!-- Finally, this starts foundation for everything on the page -->
+  <script type="text/javascript">
+	   $(document).ready(function() {
+		 $(document).foundation();
+	   });
+   </script>
+</head>
+<body>
+    <header class="grid-container">
+        <nav class="grid-x">
+            <div class="medium-4 cell">
+                <ul class="horizontal menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="secure/register.html">sign up</a></li>
+                    <li><a href="secure/signin.html">sign in</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="grid-x">
+            <div class="medium-12 cell text-center">
+                <h1>Create Your Dinosaur</h1>
+                <h2>do you want a pet but not the work? create your virtual dinosaur now! <br>no need to buy food for something that's already extinct!</h2>
+                <button href="register.html"><a href="secure/register.html">Get Started</a></button>
+            </div>
+        </div>
+    </header>
+</body>
+<html>

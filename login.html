@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Log In</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Open+Sans" rel="stylesheet">
+  <!-- This loads Foundation CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
+  <!-- This loads jQuery JavaScript (this must be before the Foundation js below) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- This loads Foundation JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <!-- Finally, this starts foundation for everything on the page -->
+  <script type="text/javascript">
+	   $(document).ready(function() {
+		 $(document).foundation();
+	   });
+   </script>
+</head>
+<body>
+  <nav>
+    <div class="grid container">
+      <div class="grid-x grid-padding-x">
+        <div class="medium-12 cell">
+          <ul class="horizontal menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="upload.html">Upload</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="grid container">
+        <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="medium-6 cell sign-in">
+                <h1>Sign In</h1>
+                <hr>
+                <form action="signin.php" method="POST" enctype="multipart/form-data" name="logIn">
+                    <label>Email</label>
+                    <input name="email" size="30" maxlength="28" autocomplete="email" required="required" placeholder="Email" type="text">
+                    <br>
+                    <label>Password</label>
+                    <input name="password" size="30" maxlength="28" autocomplete="on" required="required" placeholder="Password" type="password">
+                    <br>
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
+            <div class="medium-6 cell sign-up">
+                <h1>Sign Up</h1>
+                <hr>
+                <form action="insert.php" method="POST" enctype="multipart/form-data" name="signUp">
+                    <div class="grid-x grid-padding-x">
+                        <div class="medium-6 cell">
+                            <label>First Name</label>
+                            <input name="fname" size="15" max-length="15" autocomplete="name" required="required" placeholder="Name" type="text">                        
+                        </div>
+                        <div class="medium-6 cell">
+                            <label>Last Name</label>
+                            <input name="lname" size="15" max-length="13" autocomplete="name" required="required" placeholder="Name" type="text">
+                        </div>
+                        <div class="medium-12 cell">
+                            <label>Email</label>
+                            <input name="email" size="30" max-length="28" autocomplete="email" required="required" placeholder="Email" type="text">
+                            <br>
+                            <label>Password</label>               <input name="password" size="30" max-length="28" autocomplete="on" required="required" placeholder="Password" type="password"> 
+                            <button type="submit">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </div>  
+  </main>
+</body>
+<html>
