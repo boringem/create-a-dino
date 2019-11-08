@@ -1,0 +1,29 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>Create Itinerary Record</title>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" rel="stylesheet">
+<link href="forms.css" rel="stylesheet" type="text/css">
+<!-- This loads Foundation CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
+<!-- This loads jQuery JavaScript (this must be before the Foundation js below) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- This loads Foundation JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<!-- Finally, this starts foundation for everything on the page -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(document).foundation();
+    });
+</script>    
+</head>
+<body>
+    <form autocomplete="on" method="GET" action="select.php" name="select">Search
+      <select name="menu" id="menu">
+        <option value="petName" selected="selected">Pet Name</option>
+        <option value="typeId">Breed</option>
+      </select>
+      &nbsp; for&nbsp; <input autocomplete="on" required="required" placeholder="a single word or phrase"
+        name="search" type="text"> </form>
+</body>
+</html>

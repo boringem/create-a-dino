@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Sign Up</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+  <link href="forms.css" rel="stylesheet" type="text/css">  
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <!-- This loads Foundation CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
+  <!-- This loads jQuery JavaScript (this must be before the Foundation js below) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- This loads Foundation JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <!-- Finally, this starts foundation for everything on the page -->
+  <script type="text/javascript">
+	   $(document).ready(function() {
+		 $(document).foundation();
+	   });
+   </script>
+</head>
+<body>
+    <nav class="navigation navbar-default">
+        <div class="data-sticky-container">
+            <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+                <div class="title-bar">
+                    <ul class="horizontal menu">
+                        <li><a href="../index.html">home</a></li>
+                        <li><a href="../about.html">about</a></li>
+                        <li><a href="register.html">sign up</a></li>
+                        <li><a href="signin.html">sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>    
+    <section>
+    <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="medium-12 cell text-center sidebar">
+            <h1>Sign Up</h1>
+        </div>
+    <aside class="medium-4 cell text-center sidebar">
+        <h2>Let's get started!</h2>
+        <img src="brontosaurus.svg" alt="brontosaurus">
+    </aside>
+    <div class="medium-4 cell">
+        <form action="register.php" method="POST" enctype="multipart/form-data" name="inputData">
+            <label>Username</label>
+            <input name="username" size="40" autocomplete="on" required="required" type="text">
+            <label>First Name</label>
+            <input name="fname" size="40" autocomplete="on" required="required" type="text">
+            <label>Last Name</label>
+            <input name="lname" size="40" autocomplete="on" required="required" type="text">            
+            <label>Email</label>
+            <input name="email" size="40" autocomplete="email" required="required" type="text">
+            <label>Password</label>
+            <input name="password" size="40" autocomplete="on" required="required" type="password">            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <aside class="medium-4 cell text-center sidebar">
+        <h2>Dinosaurs are a man's <br>best friend!</h2>
+        <img src="trex-reverse.svg" alt="t-rex">
+    </aside>
+    </div>
+    </section>
+</body>
+<html>

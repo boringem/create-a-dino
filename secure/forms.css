@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    background-color: rgba(244, 217, 27);
+}
+nav a {
+    color: #333;
+    font-weight: bolder;
+}
+nav .title-bar {
+    background-color: rgba(244, 217, 27);
+}
+form label {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 18px;
+}
+form button[type=submit] {
+    background-color: rgba(244, 217, 27, 0.7);
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    border-radius: 4px;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: rgba(51, 255, 0, 0.4);
+}
+section h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 150%;
+}
+section h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+.sidebar {
+    background: rgba(244, 217,27, 1);
+}
+section img {
+    min-height: 500px;
+    min-width: auto;
+}

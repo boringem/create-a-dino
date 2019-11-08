@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Sign In</title>
+  <link href="forms.css" rel="stylesheet" type="text/css">  
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <!-- This loads Foundation CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
+  <!-- This loads jQuery JavaScript (this must be before the Foundation js below) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- This loads Foundation JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <!-- Finally, this starts foundation for everything on the page -->
+  <script type="text/javascript">
+	   $(document).ready(function() {
+		 $(document).foundation();
+	   });
+   </script>
+</head>
+<body>  
+        <form action="login.php" method="POST" enctype="multipart/form-data" name="inputData">
+            <label>Username</label>
+            <input name="username" size="40" autocomplete="on" required="required" type="text">          
+            <label>Password</label>
+            <input name="password" size="40" autocomplete="on" required="required" type="password">            <br>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+</body>
+<html>

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>Create Itinerary Record</title>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" rel="stylesheet">
+<link href="forms.css" rel="stylesheet" type="text/css">
+<!-- This loads Foundation CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" rel="stylesheet" type="text/css">
+<!-- This loads jQuery JavaScript (this must be before the Foundation js below) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- This loads Foundation JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<!-- Finally, this starts foundation for everything on the page -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(document).foundation();
+    });
+</script>    
+</head>
+<body>
+    <form action="process.php" method="POST" enctype="multipart/form-data" name="inputData">
+            <label>Dinosaur Breed</label>
+            <select name="breeds">
+                <option value="brontosaurus">Brontosaurus</option>
+                <option value="trex">Tyrannosaurus Rex</option>
+                <option value="bird">Bird</option>
+                <option value="triceratops">Triceratops</option>
+            </select>
+            <label>Pet Name</label>
+            <input name="petname" size="40" autocomplete="on" required="required" type="text"> <br>
+            <button type="submit">Submit</button>
+        </form>
+</body>
+</html>
